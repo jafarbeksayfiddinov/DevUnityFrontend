@@ -39,7 +39,7 @@ window.onload = function () {
   let loc = localStorage.getItem("token");
   let seat = 0;
   axios({
-    url: `http://localhost:8080/api/event/user?id=${id}`,
+    url: `https://devunitybackend-production.up.railway.app/api/event/user?id=${id}`,
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -142,7 +142,7 @@ window.onload = function () {
     let used = [];
     let chs = false;
     axios({
-      url: `http://localhost:8080/api/event/user/classmates`,
+      url: `https://devunitybackend-production.up.railway.app/api/event/user/classmates`,
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -254,7 +254,7 @@ window.onload = function () {
     };
     console.log(obj);
     axios({
-      url: "http://localhost:8080/api/auth/register",
+      url: "https://devunitybackend-production.up.railway.app/api/auth/register",
       method: "post",
       data: obj,
     }).then((res) => {

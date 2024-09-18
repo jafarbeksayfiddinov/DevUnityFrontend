@@ -1,6 +1,6 @@
 let classes = document.getElementById('class');
 axios({
-    url:"http://localhost:8080/api/auth/clazz",
+    url:"https://devunitybackend-production.up.railway.app/api/auth/clazz",
     method: "GET"
 }).then(res => {
     let s=`
@@ -41,7 +41,7 @@ document.getElementById('registerForm').addEventListener('submit', function (eve
         }
         console.log(obj)
         axios({
-            url:"http://localhost:8080/api/auth/register",
+            url:"https://devunitybackend-production.up.railway.app/api/auth/register",
             method:"post",
             data:obj
         }).then(res=>{

@@ -1,7 +1,7 @@
 window.onload = function(){
     let loc = localStorage.getItem("token"); 
     axios({
-      url: "http://localhost:8080/api/check/role/user",
+      url: "https://devunitybackend-production.up.railway.app/api/check/role/user",
       method: "GET",
       headers: {
       "Content-Type": "application/json",
@@ -23,7 +23,7 @@ function nn() {
   let s;
   let loc = localStorage.getItem("token"); 
   axios({
-    url: "http://localhost:8080/api/check/role/super",
+    url: "https://devunitybackend-production.up.railway.app/api/check/role/super",
     method: "GET",
     headers: {
     "Content-Type": "application/json",
@@ -39,7 +39,7 @@ function nn() {
   })
   
     axios({
-        url: "http://localhost:8080/api/event/user/all",
+        url: "https://devunitybackend-production.up.railway.app/api/event/user/all",
         method: "GET",
         headers: {
         "Content-Type": "application/json",

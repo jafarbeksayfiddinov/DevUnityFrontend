@@ -5,7 +5,7 @@ let par = document.getElementById('par');
 let loc = localStorage.getItem('token')
 console.log(loc)
 axios({
-    url:"http://localhost:8080/api/super/admin/statistics/user/count",
+    url:"https://devunitybackend-production.up.railway.app/api/super/admin/statistics/user/count",
     method: "GET",
     headers : {
         'Content-Type': 'application/json',
@@ -17,7 +17,7 @@ axios({
     registered_users.innerHTML=s
 })
 axios({
-    url:"http://localhost:8080/api/super/admin/statistics/dev/member/count",
+    url:"https://devunitybackend-production.up.railway.app/api/super/admin/statistics/dev/member/count",
     method: "GET",
     headers : {
         'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ axios({
     devunity_member.innerHTML=f
 })
 axios({
-    url:"http://localhost:8080/api/super/admin/statistics/event/count",
+    url:"https://devunitybackend-production.up.railway.app/api/super/admin/statistics/event/count",
     method: "GET",
     headers : {
         'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ axios({
     events.innerHTML=d
 })
 axios({
-    url:"http://localhost:8080/api/super/admin/statistics/event/participant/count",
+    url:"https://devunitybackend-production.up.railway.app/api/super/admin/statistics/event/participant/count",
     method: "GET",
     headers : {
         'Content-Type': 'application/json',

@@ -271,7 +271,7 @@ var world_map = new jsVectorMap({
 
 // 
 axios({
-    url:"http://localhost:8080/api/super/admin/statistics/event/organize",
+    url:"https://devunitybackend-production.up.railway.app/api/super/admin/statistics/event/organize",
     method: "GET",
     headers : {
         'Content-Type': 'application/json',

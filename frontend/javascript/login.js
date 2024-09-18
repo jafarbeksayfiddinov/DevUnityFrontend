@@ -9,7 +9,7 @@ window.onload = function(){
             password:password
         }
         axios({
-            url:"http://localhost:8080/api/auth/login",
+            url:"https://devunitybackend-production.up.railway.app/api/auth/login",
             method:"post",
             data:obj
         }).then(res=>{

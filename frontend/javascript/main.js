@@ -22,7 +22,7 @@ var typed = new Typed(".auto-type", {
 window.onload = function(){
   let loc = localStorage.getItem("token"); 
   axios({
-    url: "http://localhost:8080/api/check/role/user",
+    url: "https://devunitybackend-production.up.railway.app/api/check/role/user",
     method: "GET",
     headers: {
     "Content-Type": "application/json",

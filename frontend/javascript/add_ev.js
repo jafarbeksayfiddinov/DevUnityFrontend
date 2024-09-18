@@ -110,7 +110,7 @@ document.getElementById("btn_submit").addEventListener("click", function (event)
       formData.append(`prizeRequestDtos[${i}].photo`, prizes[i].querySelector("#priz-image").files[0]);
     }
 
-    axios.post('http://localhost:8080/api/admin/event', formData, {
+    axios.post('https://devunitybackend-production.up.railway.app/api/admin/event', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           Authorization: `${loc}`,
@@ -120,7 +120,7 @@ document.getElementById("btn_submit").addEventListener("click", function (event)
         window.location.href = "events.html";
     })
 //     axios({
-//       url: "http://localhost:8080/api/admin/event",
+//       url: "https://devunitybackend-production.up.railway.app/api/admin/event",
 //       method: "post",
 //       data: obj,
 //       headers: {
